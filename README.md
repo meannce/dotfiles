@@ -1,6 +1,7 @@
 # dotfiles
-
+my settings
 ## to-do
+everything i'm procrastinating about
 ### nvim config
 - add treesitter
 - configure lsp
