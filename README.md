@@ -1,8 +1,23 @@
 # dotfiles
 
-## notes to self (because my memory is terrible)
-- you use chezmoi, here is your cheatsheet: https://www.chezmoi.io/user-guide/command-overview/
-- you don't have your nvim config here yet because you haven't finished that
-- this is your config in arch (**btw**)
+## to-do
+### nvim config
+- add treesitter
+- configure lsp
+- setup linters, formatters
+- autocompletion stuff
 
+### misc
+- fix hyprpaper script (doesn't always assign a wallpaper)
+- setup something emacs because why the fuck not
+- hyprrice something more consistent and less standard
 
+## chezmoi cheatsheet
+(because i'll forget)
+https://www.chezmoi.io/user-guide/command-overview/
+
+### adding a file
+`chezmoi add <insert directory/file here>`
+
+### how i edit
+`chezmoi cd` > edit whatever i want > git
