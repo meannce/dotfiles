@@ -1,12 +1,12 @@
 #!/bin/bash
-
-# to-do: if hyprctl monitors != DP-1, then DP-2
-# i hate this, but otherwise wallpaper doesn't load
-sleep 1 
-
 WALLPAPER_DIR="$HOME/wallpapers"
 WALLPAPER=$(find "$WALLPAPER_DIR" -type f | shuf -n 1)
+MONITOR=$(hyprctl monitors | grep -m1 "Monitor" | awk '{print $2}')
+
+until hyprctl hyprpaper listloaded &>/dev/null; do
+	sleep 0.1
+done
 
 hyprctl hyprpaper unload all
 hyprctl hyprpaper preload "$WALLPAPER"
-hyprctl hyprpaper wallpaper "DP-3,$WALLPAPER" # DP-3 = monitor ('hyperctl monitors')
+hyprctl hyprpaper wallpaper "$MONITOR,$WALLPAPER"
