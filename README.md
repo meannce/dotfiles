@@ -2,16 +2,12 @@
 my settings
 ## to-do
 everything i'm procrastinating about
-### nvim config
-- add treesitter
-- configure lsp
-- setup linters, formatters
-- autocompletion stuff
 
 ### misc
 - fix hyprpaper script (doesn't always assign a wallpaper)
 - setup something emacs because why the fuck not
 - hyprrice something more consistent and less standard
+- create nvim config from scratch (once i get more experience)
 
 ## chezmoi cheatsheet
 (because i'll forget)
